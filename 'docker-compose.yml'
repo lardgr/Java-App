@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  redis:
+    build: ./redis
+    ports:
+      - "6379:6379"
+
+  mongo:
+    build: ./mongo
+    ports:
+      - "27017:27017"
+      
+  mongo-express:
+    build: ./mongo-express
+    ports:
+      - "8081:8081"
+
+  mariadb:
+    build: ./mariadb
+    environment:
+      - MARIADB_ROOT_PASSWORD=root
+    ports:
+      - "3306:3306"
+      
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
