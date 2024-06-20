@@ -1,0 +1,16 @@
+= Virtual Lab Documentation
+
+== Περιγραφή
+Αυτό το εικονικό εργαστήριο περιλαμβάνει τις ακόλουθες υπηρεσίες:
+- Redis
+- MongoDB & MongoExpress
+- MariaDB
+- Nginx
+
+== Πώς να ξεκινήσετε
+1. Κλωνοποιήστε το repository:
+`git clone <repository-url>`
+2. Μεταβείτε στον φάκελο του έργου:
+`cd <project-folder>`
+3. Εκκινήστε τις υπηρεσίες:
+`docker-compose up`
